@@ -6,13 +6,12 @@ var i = 0;
 function update()
 {
     i++;
-    var number_of_family_member_in_array = 5
-    if(i > number_of_family_member_in_array )
+    if(i > 4 )
     {
-        i = 0++;
+        i = 0;
     }
-    var updatedImage = images[i++];
-    var updatedName = names[i++];
-    document.getElementById("family_member_image").src = updatedImage;
-    document.getElementById("family_member_name").innerHTML = updatedName;
+    var updatedImage = images[i];
+    var updatedName = names[i];
+    document.getElementById("family").src = updatedImage;
+    document.getElementById("Family_name").innerHTML = updatedName;
 }
